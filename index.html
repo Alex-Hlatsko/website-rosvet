@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/png">
+    <title>Рассвет</title>
+    <!-- Links -->
+    <link rel="stylesheet" type="text/css" href="./libs/slick.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+<header class="header" id="header">
+    <!-- HEADER BACKGROUND -->
+    <div class="header__background">
+        <img class="top__circle" src="./images/header_circle_bg.png" alt="circle" data-aos="fade-down">
+        <div class="header__background__item item1"></div>
+        <div class="header__background__item item2"></div>
+        <img class="bottom__net" src="./images/header_bottom_net.png" alt="net" data-aos="fade-up">
+        <img class="bottom__circle1" src="./images/header_circle_big.png" alt="circle1" data-aos="fade-up-left">
+        <img class="bottom__circle2" src="./images/header_circle_small.png" alt="circle2" data-aos="fade-up-right">
+    </div>
+    <!-- HEADER CONTENT -->
+    <div class="header__content container">
+        <!-- NAVIGATION -->
+        <div class="header__nav" data-aos="fade-down">
+            <div class="header__nav__items" id="menu">
+                <a class="header__nav__item" onclick="scrollToContact()">контакты</a>
+                <a class="header__nav__item" onclick="scrollToProgram()">программа</a>
+                <a class="header__nav__item" onclick="scrollToPartner()">партнерам</a>
+                <a class="header__nav__item" onclick="scrollToDirect()">направления</a>
+                <a class="header__nav__item" onclick="scrollToSupport()">поддержка</a>
+            </div>
+            <div class="header__nav__menu" onclick="openMenu()">
+                <img src="./images/menu_burger.svg" alt="burger">
+            </div>
+            <div class="header__nav__logo">
+                <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+            </div>
+        </div>
+        <!-- HEADER TEXT -->
+        <div class="header__content__info">
+            <img class="logo__title" src="./images/header_title.svg" alt="logo__title" data-aos="fade-down">
+            <h1 class="header__title">Будущее в твоих руках!</h1>
+            <a href="#" class="header__btn" onclick="openBanner()">стать участником</a>
+        </div>
+    </div>
+</header>
+
+    <!-- ABOUT -->
+    <div class="about">
+        <!-- ABOUT BG -->
+        <div class="about__bg">
+            <img src="./images/about_bg.png" alt="about_bg">
+        </div>
+        <!-- ABOUT CONTENT -->
+        <div class="about__content container">
+            <div class="about__content__circle" data-aos="fade-right">
+                <img src="./images/about.png" alt="about">
+            </div>
+            <!-- CONTENT TEXT -->
+            <div class="about__content__text" data-aos="fade-right">
+                <div class="about__text about__text1">
+                    <p class="sub__title"><span class="bold">Рассвет</span>— движение, которое поддерживает, объединяет
+                                                            и вдохновляет молодых людей, открывает новые возможности для развития и помогает найти свое
+                                                            призвание.</p>
+                </div>
+                <div class="about__text about__text2">
+                    <p class="sub__title"><span class="bold">Рассвет</span> — это символ уверенности
+                                                            в сегодняшнем дне, символ новых открытий и возможностей, символ
+                                                            того, что все еще впереди.</p>
+                </div>
+                <div class="about__text about__text3">
+                    <p class="sub__title"><span class="bold">Мы хотим</span>, чтобы как можно больше людей поверили в
+                                                            себя и свои силы, и готовы сделать все, чтобы они стали теми, кем по-настоящему
+                                                            хотят быть.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TICKER 1 -->
+    <div class="ticker">
+        <marquee behavior="scroll" direction="right" scrolldelay="30" truespeed="truespeed">
+            <h1 class="ticker__title">Раскрываем <span class="bold">возможности</span></h1>
+        </marquee>
+        <marquee behavior="scroll" direction="left" scrolldelay="30" truespeed="truespeed">
+            <p>
+                <span class="ticker__bold">рассвет</span>
+                <span class="ticker__border">рассвет</span>
+                <span class="ticker__bold">рассвет</span>
+            </p>
+        </marquee>
+    </div>
+
+    <!-- FAITH -->
+    <div class="faith">
+        <!-- FAITH BACKGROUND -->
+        <div class="faith__bg">
+            <img src="./images/faith_bg.png" alt="bg" class="faith__bg__img">
+            <img src="./images/faith_net.png" alt="net" class="faith__net" data-aos="fade-left">
+            <img src="./images/faith_circle.png" alt="net" class="faith__circle1">
+            <img src="./images/faith_circle.png" alt="net" class="faith__circle2">
+        </div>
+        <!-- FAITH CONTENT -->
+        <div class="faith__content container">
+            <!-- CONTENT TITLE -->
+            <div class="faith__content__title" data-aos="fade-right">
+                <h1 class="title">
+                    Во что мы<br />верим?
+                </h1>
+            </div>
+            <!-- CONTENT TEXT -->
+            <div class="faith__content__text" data-aos="fade-left">
+                <span class="text1">Единство</span>
+                <span class="text2">Энергия</span>
+                <span class="text3">Честность</span>
+                <span class="text4">Равенство</span>
+                <span class="text5">Взгляд на будущее</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- GOALS -->
+    <div class="goals">
+        <!-- GOALS BACKGROUND -->
+        <div class="goals__bg">
+            <img class="goals__bg__png" src="./images/goals_bg.png" alt="goals_bg">
+            <img class="goals__bg__circle" src="./images/goals_circle_stat.png" alt="circle_stat">
+        </div>
+        <!-- GOALS CONTENT -->
+        <div class="goals__content content">
+            <!-- CONTENT ARROWS -->
+            <img src="./images/goals_circle1.png" alt="circle1" class="goals__content__circle1">
+            <img src="./images/goals_circle2.png" alt="circle2" class="goals__content__circle2">
+            <img src="./images/row_up.svg" alt="row1" class="goals__content__row1">
+            <img src="./images/row_down.svg" alt="row2" class="goals__content__row2">
+            <!-- CONTENT TEXT1 -->
+            <div class="goals__text1">
+                <h1 class="goals__title">Наш долг</h1>
+                <p class="goals__sub_title">Помогать, поддерживать,<br />создавать новое.</p>
+            </div>
+            <!-- CONTENT TEXT2 -->
+            <div class="goals__text2">
+                <h1 class="goals__title">Наша цель</h1>
+                <p class="goals__sub_title">Помочь каждому поверить в себя <br />и найти свое призвание</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- DOING -->
+    <div class="doing">
+        <h1 class="block__title">Что мы делаем?</h1>
+        <!-- DOING BACKGROUND -->
+        <div class="doing__bg">
+            <img class="name" src="./images/doing_bg.png" alt="doing__bg">
+            <img src="./images/doing_net.png" alt="doing__net">
+        </div>
+        <!-- DOING CONTENT -->
+        <div class="doing__content">
+            <div class="doing__content__table">
+                <!-- CONTENT TABLE PC -->
+                <div class="table__pc">
+                    <img src="./images/doing__table__pc.svg" alt="table_pc">
+                </div>
+                <!-- CONTENT TABLE MB -->
+                <div class="table__mb">
+                    <img src="./images/doing__table__mb.svg" alt="table_mb">
+                </div>
+            </div>
+            <!-- CONTENT TEXT -->
+            <div class="doing__content__text">
+                <!-- CONTENT TEXT 1 -->
+                <div class="doing__text1" data-aos="fade-right">
+                    <h1 class="doing__title">1. Раскрываем возможности</h1>
+                    <p class="doing__sub_title">Каждый человек талантлив от природы.<br />
+                        Задача рассвета — найти твой талант<br />
+                        и дать возможность для его реализации</p>
+                </div>
+                <!-- CONTENT TEXT 2 -->
+                <div class="doing__text2" data-aos="fade-left">
+                    <h1 class="doing__title">2. Даем веру в себя</h1>
+                    <p class="doing__sub_title">Мы помогаем преодолеть страх неудач<br />
+                        и ответственности. Рассвет учит быть<br />
+                        сильными и смелыми, а в случае чего<br />
+                        - всегда протянет руку помощи.<br />
+                        С нами — ты не один и способен на всё</p>
+                </div>
+                <!-- CONTENT TEXT 3 -->
+                <div class="doing__text3" data-aos="fade-right">
+                    <h1 class="doing__title">3. Поддерживаем</h1>
+                    <p class="doing__sub_title">Каждый участник может создавать<br />
+                        собственные проекты при поддержке <br />
+                        Рассвета. Мы помогаем подготовить все <br />
+                        необходимые материалы и документы,<br />
+                        привлекаем инвестиции и делимся<br />
+                        опытом, чтобы все предложенные идеи<br />
+                        воплощались в жизнь</p>
+                </div>
+                <!-- CONTENT TEXT 4 -->
+                <div class="doing__text4" data-aos="fade-right">
+                    <h1 class="doing__title">4. Объединяем и организовываем</h1>
+                    <p class="doing__sub_title">Совместными усилиями всегда можно<br />
+                        достичь большего, чем в одиночку.<br />
+                        Мы поддерживаем командную работу,<br />
+                        дружелюбие и взаимопомощь.<br />
+                        Рассвет — это единомышленники,<br />
+                        верные друзья и надежные товарищи</p>
+                </div>
+                <!-- CONTENT TEXT 5 -->
+                <div class="doing__text5" data-aos="fade-left">
+                    <h1 class="doing__title">5. Показываем путь</h1>
+                    <p class="doing__sub_title">Мы предлагаем понятную программу<br />
+                        действий, открываем возможности<br />
+                        для реализации потенциала каждого<br />
+                        участника. Рассвет ежедневно<br />
+                        совершенствуется и расширяется,<br />
+                        предлагая больше новых возможностей<br />
+                        для большего числа участников</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHY 1 -->
+    <div class="why">
+        <!-- WHY BACKGROUND -->
+        <div class="why__bg">
+            <img class="why__bg__png" src="./images/why_bg.png" alt="why_bg">
+            <img class="why__bg__circle" src="./images/why_circle.png" alt="why_circle" data-aos="fade-up-left">
+            <img class="why__bg__net" src="./images/why_net.png" alt="why_circle" data-aos="fade-down">
+            <img class="why__bg__title" src="./images/logo_title_black.png" alt="why_title" data-aos="fade-left">
+        </div>
+        <h1 class="block__title">Зачем?</h1>
+        <!-- WHY CONTENT -->
+        <div class="why__content">
+            <!-- WHY PUNKTS -->
+            <div class="why__punkts">
+                <!-- WHY PUNKT 1 -->
+                <div class="punkts__item" data-aos="fade-right">
+                    <h1 class="punkts__item__title">01\</h1>
+                    <p class="punkts__item__sub_title">Вера в себя и стремление двигаться вперед уже давно стали
+                                                        редкостью, почти каждый человек лишен большой цели и не готов что-либо менять.</p>
+                    </div>
+                    <!-- WHY PUNKT 2 -->
+                    <div class="punkts__item" data-aos="fade-right">
+                        <h1 class="punkts__item__title">02\</h1>
+                        <p class="punkts__item__sub_title">Это не просто делает людей несчастными,
+                                                            это ставит крест на самой возможности сделать
+                                                            наш мир лучше, на желании изобретать, создавать и пробовать новое.</p>
+                    </div>
+                    <!-- WHY PUNKT 3 -->
+                    <div class="punkts__item" data-aos="fade-right">
+                    <h1 class="punkts__item__title">03\</h1>
+                    <p class="punkts__item__sub_title">Без веры в себя и свои силы — не будет новых городов, не будут
+                                                        решены глобальные проблемы,
+                                                        без большой цели мы никогда не полетим
+                                                        к новым планетам, никогда не построим счастливое и справедливое общество</p>
+                    </div>
+            </div>
+            <!-- WHY BOTTOM CONTENT -->
+            <div class="why__info container">
+                <h1 class="title" data-aos="fade-right">Мы не можeм допустить,<br /> чтобы так продолжалось дальше.</h1>
+                <p class="sub__title" data-aos="fade-right">Рассвет готов сделать всё возможное,
+                                                            чтобы как можно больше
+                                                            людей обрели то, без чего прожить невозможно: Уверенность, Цель и Команда.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TICKER 2 -->
+    <div class="ticker ticker2">
+        <marquee behavior="scroll" direction="right" scrolldelay="30" truespeed="truespeed">
+            <h1 class="ticker__title">Раскрываем <span class="bold">возможности</span></h1>
+        </marquee>
+        <marquee behavior="scroll" direction="left" scrolldelay="30" truespeed="truespeed">
+            <p>
+                <span class="ticker__bold">рассвет</span>
+                <span class="ticker__border">рассвет</span>
+                <span class="ticker__bold">рассвет</span>
+            </p>
+        </marquee>
+    </div>
+
+    <!-- FOR WHOM -->
+    <div class="forwhom">
+        <!-- FOR WHOM BACKGROUND-->
+        <div class="forwhom__bg">
+            <img class="forwhom__bg__img" src="./images/forwhom.png" alt="forwhom_bg">
+            <img class="forwhom__bg__net" src="./images/forwhom_bg_net.png" alt="forwhom_bg" data-aos="fade-left">
+        </div>
+        <h1 class="block__title">Для кого?</h1>
+        <!-- FOR WHOM CONTENT-->
+        <div class="forwhom__content">
+            <!-- FOR WHOM SLIDER-->
+            <div class="center">
+                <!-- SLIDE 1-->
+                <div>
+                    <img class="slider__img" src="./images/slider1.png" alt="slider1">
+                </div>
+                <!-- SLIDE 2-->
+                <div>
+                    <img class="slider__img" src="./images/slider1.png" alt="slider2">
+                </div>
+                <!-- SLIDE 3-->
+                <div>
+                    <img class="slider__img" src="./images/slider1.png" alt="slider3">
+                </div>
+                <!-- SLIDE 4-->
+                <div>
+                    <img class="slider__img" src="./images/slider1.png" alt="slider4">
+                </div>
+            </div>
+            <!-- FOR WHOM CATEGORY-->
+            <div class="forwhom__category">
+                <!-- CATEGORY 1 -->
+                <div class="forwhom__category__item" data-aos="fade-down">
+                    <p class="forwhom__sub_title">
+                        Рассвет — это идея, система ценностей, стиль жизни. Каждый, кто разделяет наши убеждения,
+                        стремится к общим с нами целям - может считать себя участником Рассвета.
+                    </p>
+                </div>
+                <!-- CATEGORY 2 -->
+                <div class="forwhom__category__item" data-aos="fade-down">
+                    <p class="forwhom__sub_title">
+                        У Рассвета нет и не может быть лидера, нет
+                        и не может быть территориальных, национальных
+                        и религиозных границ. Рассвет децентрализован
+                        и принадлежит каждому из его участников.
+                    </p>
+                </div>
+                <!-- CATEGORY 3 -->
+                <div class="forwhom__category__item" data-aos="fade-down">
+                    <p class="forwhom__sub_title">
+                        Движение принимает любого, кто готов создавать новое, двигаться вперед
+                        и не боится трудностей. Присоединиться можно ниже.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHY 2 -->
+    <div class="why2">
+        <h1 class="why2__title" data-aos="fade-down">Почему?</h1>
+        <!-- WHY BACKGROUND -->
+        <div class="why2__bg">
+            <img src="./images/why2_bg.png" alt="why2_bg">
+            <img class="why2_net" src="./images/why2_bg_net.png" alt="why2_bg" data-aos="fade-up-right">
+        </div>
+        <!-- WHY CONTENT -->
+        <div class="why2__content">
+            <!-- WHY CONTENT IMG-->
+            <div class="why2__content__img">
+                <img class="why2__content__paket" src="./images/why2_bg_paket.png" alt="circle" data-aos="fade-up-left">
+                <img class="why2__content__circle" src="./images/why2_bg_circle.png" alt="paket">
+                <img class="why2__content__paket_mobile" src="./images/why2_paket_mobile.png" alt="paket_mobile">
+            </div>
+            <!-- WHY CONTENT TEXT -->
+            <div class="why2__content__text" data-aos="fade-left">
+                <p>Войны, эпидемии, голод, нищета и ряд других глобальных проблем уже долгое время кажутся человечеству
+                    неразрешимыми. Стало принято считать, что даже
+                    браться за борьбу с ними - наивно и бессмысленно.<br />
+                    <br />
+                    Мы убеждены, что так продолжаться не должно.
+                    Мы верим, что любую, даже самую сложную проблему можно решить, поверив в свои силы и
+                    объединившись.<br/>
+                    <br />
+                    Именно поэтому и появился Рассвет - движение, призванное помочь поверить в себя и объединить всех,
+                    кто готов жить ради общего счастливого будущего, всех, кто готов создавать невозможное и браться за
+                    неразрешимые задачи.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROGRAMM -->
+    <div class="program" id="program_mb">
+        <!-- PROGRAMM BACKGROUND -->
+        <div class="program__bg">
+            <img src="./images/program_bg.png" alt="">
+        </div>
+        <h1 class="block__title" data-aos="fade-right">Программа</h1>
+        <!-- PROGRAMM CONTENT -->
+        <div class="program__content">
+            <!-- PROGRAMM FIND -->
+            <div class="program__item">
+                <p class="program__item__title"><span class="program__red">\</span> O1 найти</p>
+                <div class="program__item__open">
+                    <p class="open__close open_active" id="find_open" onclick="openFindMenu()">Подробнее ↓</p>
+                    <p class="open__open" id="find_close" onclick="openFindMenu()">Свернуть</p>
+                </div>
+            </div>
+            <!-- PROGRAMM FIND BOTTOM-->
+            <div class="program__bottom find" id="find">
+                <h1 class="find__title">ПОМОЩЬ В ВЫБОРЕ ПРОФЕССИИ</h1>
+                <!-- FIND CONTENT -->
+                <div class="find__content">
+                    <p>Здесь не будет сухих лекций, только 100% погружение в профессию,<br />
+                        100% практики.<br /><br />
+                        <span>Мы предлагаем</span>:<br />
+                        Прожить 1 день в качестве сотрудника реальной компании<br />
+                        в любой области.<br /><br />
+                        
+                        Это будет настоящая компания, настоящие задачи <br />
+                        и настоящие впечатления от профессии.<br /><br />
+                        
+                        Задать абсолютно любые вопросы мастерам своего дела, прочувствовать будущую работу на <br />
+                        себе.<br /><br />
+                        Мы проводим каждого от неизвестности до поступления в вуз и первого удачного <br />
+                        собеседования.
+                    </p>
+                </div>
+                <img class="find__arrow" src="./images/findArrow.svg" alt="arrow">
+                <h1 class="find__title">ЦЕЛЕВОЕ ОБУЧЕНИЕ</h1>
+                <!-- FIND CONTENT -->
+                <div class="find__content">
+                    <p>Рассвет предлагает помощь<br />
+                        с поступлением в ВУЗ <br />
+                        для участников, определившихся со сферой деятельности. <br />
+                        <br />
+                        Мы поможем выбрать университет, а по возможности договоримся<br />
+                        с нашими партнерами<br />
+                        об оформлении целевого обучения для наиболее активных участников.
+                    </p>
+                </div>
+                <img class="find__arrow" src="./images/findArrow.svg" alt="arrow">
+                <h1 class="find__title">КОНСУЛЬТАЦИИ</h1>
+                <!-- FIND CONTENT -->
+                <div class="find__content">
+                    <p>Помимо прочего, профессиональные карьерные консультанты Рассвета готовы помочь в <br /> выборе
+                        специальности советом, составить резюме, подобрать список вакансий и подготовить <br />участника
+                        к общению <br />
+                        с работодателем.</p>
+                </div>
+                <img class="find__arrow" src="./images/findArrow.svg" alt="arrow">    
+                <!-- FIND DIRECTIONS -->
+                <div class="find__directions" id="direct_mb">
+                    <p>Мы предлагаем найти себя в одном из наших <br />
+                        основных направлений
+                    </p>
+                    <div class="find__directions__item">
+                         <!-- FIND DIRECTION 1 -->
+                         <div class="direction__item">
+                             <h1 class="directions__item__title">Наука</h1>
+                             <img src="./images/find_direction1.png" alt="" class="directions__item__img">
+                        </div>
+                        <!-- FIND DIRECTION 2 -->
+                        <div class="direction__item">
+                            <h1 class="directions__item__title">Техника</h1>
+                            <img src="./images/find_direction2.png" alt="" class="directions__item__img">
+                        </div>
+                    </div>
+                    <div class="find__directions__item">
+                        <!-- FIND DIRECTION 3 -->
+                        <div class="direction__item">
+                            <h1 class="directions__item__title">Творчество</h1>
+                            <img src="./images/find_direction3.png" alt="" class="directions__item__img">
+                        </div>
+                        <!-- FIND DIRECTION 4 -->
+                        <div class="direction__item" id="direct_content">
+                            <h1 class="directions__item__title">Спорт</h1>
+                            <img src="./images/find_direction4.png" alt="" class="directions__item__img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIND CONTENT -->
+                <div class="find__content">
+                    <p>
+                        <span>Наука</span><br />
+                        <br />
+                        Наука в Рассвете <br />
+                        - это захватывающие эксперименты, <br />
+                        опыты и открытия.<br />
+                        <br />
+                        Мы раскроем для тебя современные технологии: кибернетика, биохимия<br />
+                        и множество других научных областей будут представлены<br />
+                        в наших лабораториях.<br />
+
+                        Современное оборудование, известные ученые, практики научной работы <br />
+                        - всё это,и даже больше,<br />
+                        будет доступно каждому участнику Рассвета.<br />
+                        <br />
+                        <span>Техника</span><br />
+                        <br />
+                        Будущее это постоянные эксперименты <br />
+                        и изобретения.<br />
+                        <br />
+                        Здесь тебя ждут Механика, Робототехника, Авиаконструирование, <br />
+                        3D-Моделирование<br />
+                        и многое другое.<br />
+                        <br />
+                        Рассвет открывает мастерские, оснащённые огромным количеством механизмов, схем, модулей и
+                        инструментов, привлекает лучших инженеров, конструкторов<br />
+                        и изобретателей.<br />
+                        <br />
+                        <span>Творчество</span><br />
+                        <br />
+                        Ты полон креативных идей<br />
+                        и всегда хотел попробовать себя в творчестве?<br />
+                        Рассвет поможет тебе получить базовые навыки и применить их на практике.<br />
+                        Опыт не важен, главное - желание.<br />
+                        <br />
+                        Мы открываем творческие пространства и мастерские, проводим выставки, приглашаем известных
+                        художников, музыкантов<br />
+                        и дизайнеров.<br />
+                        <br />
+                        <span>Спорт</span><br />
+                        <br />
+                        Спорт в Рассвете - не только футбол и бокс, но и редкие дисциплины: скейтбординг, современные
+                        танцы, экстремальные виды спорта
+                        и другие.<br />
+                        <br />
+                        Сильные команды, опытные тренеры, возможность выступать на соревнованиях, спортивные клубы,
+                        секции и стадионы<br />
+                        - в спортивном направлении Рассвета.<br />
+                    </p>
+                </div>
+                <p class="open__mobile" id="find_close" onclick="openFindMenu()">свернуть ↑</p>
+            </div>
+
+            <!-- PROGRAM SUPPORT -->
+            <div class="program__item support">
+                <p class="program__item__title"><span class="program__red">\</span> O2 поддержать</p>
+                <div class="program__item__open">
+                    <p class="open__close open_active" id="support_open" onclick="openSupportMenu()">Подробнее ↓</p>
+                    <p class="open__open" id="support_close" onclick="openSupportMenu()">Свернуть</p>
+                </div>
+            </div>
+
+            <!-- PROGRAM SUPPORT BOTTOM -->
+            <div class="program__bottom support" id="support">
+                <h1 class="support__title">Поддержка проектов</h1>
+                <!-- SUPPORT CONTENT -->
+                <div class="support__content" id="support_content">
+                    <p>
+                        Каждый участник может предлагать собственные идеи, создавать проекты.<br />
+                        <br />
+                        Задача Рассвета - предоставить все необходимые<br />
+                        для реализации этих идей ресурсы.<br />
+                        <br />
+                        Мы помогаем превратить идею в бизнес-план, оформить презентацию, подготовить <br /> необходимые
+                        документы, привлечь финансирование, найти нужных людей, провести <br /> необходимые встречи,
+                        помогаем организовать работу внутри команды <br />
+                        и т.д.<br />
+                        <br />
+                        Иными словами - Рассвет берет на себя все трудности, с которыми могут столкнуться участники
+                        <br /> при реализации своих идей, на практике показывая, как избежать ошибок.<br />
+                        <br />
+                        Рассвет оказывает поддержку проектов бесплатно, при этом всегда предлагает взаимное <br />
+                        сотрудничество каждому из участников.<br />
+                        <br />
+                        Важно отметить, что любые идеи участников <br />
+                        в первую очередь принадлежат самим участникам, <br />
+                        а их поддержка со стороны Рассвета в первую очередь направлена на реализацию
+                        <br />индивидуального потенциала участника <br />
+                        - его успешность, уверенность и готовность создавать новое.<br />
+                        <br />
+                        Результат проекта также всецело принадлежит участнику, при этом идеи, получившие <br />
+                        поддержку Рассвета, также становятся достижениями Движения и попадают в общее <br />
+                        портфолио.<br />
+                    </p>
+                </div>
+
+                <!-- SUPPORT TIKET -->
+                <div class="support__tiket">
+                    <h1 class="tiket__title">Есть идея?</h1>
+                    <p class="tiket__sub_title">Ты можешь рассказать про<br />
+                        свой проект и получить<br />
+                        поддержку Рассвета.</p>
+                    <a class="tiket__btn" onclick="openBannerSup()">ОТПРАВИТЬ ЗАЯВКУ</a>
+                </div>
+
+                <h1 class="support__title">Поддержка участников</h1>
+                <!-- SUPPORT CONTAINER -->
+                <div class="support__container">
+                    <!-- SUPPORT CONTAINER ARROW 1 -->
+                    <img class="support__container__arrow1" src="./images/support_arrow1.svg" alt="">
+                    <!-- SUPPORT CONTAINER TEXT 1 -->
+                    <div class="support__container__text support__container__text1">
+                        <h1 class="support__container__title">Кураторство</h1>
+                        <p class="support__container__sub_title">
+                            Каждый участник может обратиться<br />
+                            в Рассвет за советом.<br />
+                            <br />
+                            Если ты не знаешь, как открыть <br /> компанию, с чего начать поиск <br /> инвесторов, какие
+                            инструменты <br /> продвижения использовать,<br />
+                            как провести исследование или как <br />просто разобраться в учебе<br />
+                            - Рассвет подскажет.
+                            <br />
+                            С нами - любой вопрос можно решить,<br />
+                            не переживая из-за недостатка <br />связей, знаний и опыта.
+                        </p>
+                    </div>
+                    <!-- SUPPORT CONTAINER ARROW 2 -->
+                    <img class="support__container__arrow2" src="./images/support_arrow2.svg" alt="">
+                    <!-- SUPPORT CONTAINER TEXT 2 -->
+                    <div class="support__container__text support__container__text2">
+                        <h1 class="support__container__title">Психологи</h1>
+                        <p class="support__container__sub_title">
+                            Психологическая поддержка крайне<br />
+                            важна любому человеку.<br />
+                            <br />
+                            В Рассвете есть онлайн система<br /> психологической помощи, а так же <br />
+                            кабинет психолога в каждом отделении.<br />
+                            <br />
+                            Любой участник может бесплатно обратиться<br />
+                            к нашим специалистам за советом, <br />получить консультацию или просто<br />
+                            выговориться о наболевшем.<br />
+                            <br />
+                            Все психологи являются<br /> дипломированными специалистами, <br />имеют опыт и все
+                            необходимые <br />документы о своей деятельности.
+                        </p>
+                    </div>
+                </div>
+                <p class="open__mobile" id="find_close" onclick="openSupportMenu()">свернуть ↑</p>
+            </div>
+
+            <!-- PROGRAM DIRECT -->
+            <div class="program__item direct" id="program">
+                <p class="program__item__title"><span class="program__red">\</span> O3 направить</p>
+                <div class="program__item__open">
+                    <p class="open__close open_active" id="direct_open" onclick="openDirectMenu()">Подробнее ↓</p>
+                    <p class="open__open" id="direct_close" onclick="openDirectMenu()">Свернуть</p>
+                </div>
+
+            </div>
+            <!-- PROGRAM DIRECT BOTTOM -->
+            <div class="program__bottom direct" id="direct">
+                <!-- DIRECT CONTAINER -->
+                <div class="direct__container">
+                    <!-- DIRECT CONTAINER PART IMG -->
+                    <div class="direct__container__part">
+                        <img src="./images/direct_photo.png" alt="">
+                        <h1 class="direct__title direct_num">\01</h1>
+                    </div>
+                    <!-- DIRECT CONTAINER PART TEXT -->
+                    <div class="direct__container__part direct__container__part__text">
+                        <h1 class="direct__title">ВОЛОНТЕРЫ</h1>
+                        <p class="direct__sub_title">
+                            Рассвет никогда не стоит в стороне.<br />
+                            Наши участники всегда готовы <br />отправиться на помощь туда,<br />
+                            где она требуется.<br />
+                            <br />
+                            Это могут быть яркие мероприятия <br /> направленные на продвижение идей, <br />отражающих
+                            наши ценности<br />
+                            - фестивали, выставки, акции<br />
+                            и другие события.<br />
+                            В то же время мы всегда готовы помочь <br />
+                            в разрешении сложных ситуаций<br />
+                            - в катастрофах, конфликтах и ряде<br /> других, чрезвычайно сложных<br />
+                            и важных проблем.<br />
+                            <br />
+                            Мы постоянно формируем волонтерские<br /> отряды, предоставляем необходимые знания<br />
+                            и снаряжение, делимся опытом<br />
+                            и убеждаем, что помогать - не выбор,<br />
+                            а неотъемлемая часть жизни каждого.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- DIRECT CONTAINER -->
+                <div class="direct__container">
+                    <!-- DIRECT CONTAINER PART TEXT -->
+                    <div class="direct__container__part direct__container__part__text">
+                        <h1 class="direct__title">СОБЫТИЯ</h1>
+                        <p class="direct__sub_title">
+                            Главный ресурс для любого начинания<br />
+                            - желание человека, его уверенность <br />
+                            в своих силах и в важности своего дела.<br />
+                            <br />
+                            Рассвет постоянно проводит<br /> мероприятия, направленные<br />
+                            на знакомство участников,<br />
+                            обмен опытом, знаниями и идеями.<br />
+                            <br />
+                            Мы поддерживаем дружелюбие, <br />командную работу и единство наших <br />участников.<br />
+                            <br />
+                            Фестивали, лекции, выставки,<br />
+                            мастер-классы, встречи, игры,<br />
+                            все это - неотъемлемая часть Рассвета, <br />доступная каждому участнику.<br />
+                            <br />
+                            Несмотря на огромное количество своих<br /> мероприятий, Рассвет<br />
+                            с радостью готов помочь или <br />поучаствовать в мероприятиях<br />
+                            наших друзей и партнеров.
+                        </p>
+                    </div>
+                    <!-- DIRECT CONTAINER PART IMG -->
+                    <div class="direct__container__part">
+                        <img src="./images/direct_photo.png" alt="">
+                        <h1 class="direct__title direct_num">\02</h1>
+                    </div>
+                </div>
+
+                <!-- DIRECT CONTAINER -->
+                <div class="direct__container">
+                    <!-- DIRECT CONTAINER PART IMG -->
+                    <div class="direct__container__part">
+                        <img src="./images/direct_photo.png" alt="">
+                        <h1 class="direct__title direct_num">\03</h1>
+                    </div>
+                    <!-- DIRECT CONTAINER PART TEXT -->
+                    <div class="direct__container__part direct__container__part__text">
+                        <h1 class="direct__title">ЗАДАНИЯ</h1>
+                        <p class="direct__sub_title">
+                            Рассвет - это постоянная работа тысяч <br />людей, объединенных общими <br />
+                            ценностями и убеждениями.<br />
+                            <br />
+                            Каждый участник может принять<br /> активное участие в реализации<br />
+                            идей Рассвета,<br />
+                            выполняя задания, которые можно найти<br />
+                            в нашем мобильном приложении.<br />
+                            <br />
+                            Это могут быть совершенно различные <br />поручения - от простого прохождения <br />опроса,
+                            создания зарисовки<br />
+                            или написания текста<br />
+                            до сложных задач, требующих <br />определенной подготовки - разработки <br />программного
+                            обеспечения,<br />
+                            участия в научной<br />
+                            и исследовательской деятельности.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- DIRECT CONTENT -->
+                <div class="direct__content">
+                    <p>
+                        Важно отметить, что участники могут не только выполнять <br />задания, <br />
+                        но и создавать собственные поручения.<br />
+
+                        Мы создаем мобильное приложение, в котором можно будет<br /> рассказать<br />
+                        о своей идее и найти подходящих для её реализации <br />участников.<br />
+                        <br />
+                        Выполнение любого задания обязательно вознаграждается, а<br /> каждая выполненная задача
+                        открывает доступ к новым <br />возможностям.<br />
+                        <br />
+                        Приложение "Рассвет" скоро будет доступно для скачивания<br />
+                        в App Store и Google Play.<br />
+                    </p>
+                </div>
+
+                <!-- DIRECT APP -->
+                <div class="direct__app">
+                    <!-- DIRECT PHONE -->
+                    <div class="direct__app__phone">
+                        <img class="direct__phone" src="./images/direct_phone.png" alt="">
+                        <img class="direct__circle" src="./images/direct_circle.png" alt="">
+                    </div>
+                    <!-- DIRECT BUTTONS -->
+                    <div class="direct__app__buttons">
+                        <a >
+                            <img src="./images/appstore.png" alt="">
+                        </a>
+                        <a >
+                            <img src="./images/googleplay.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <p class="open__mobile" id="find_close" onclick="openDirectMenu()">свернуть ↑</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHERE -->
+    <div class="where" id="partner_mb">
+        <!-- WHERE BACKGROUND-->
+        <div class="where__bg">
+            <img class="where__bg__img" src="./images/where__bg.png" alt="bg">
+            <img class="where__bg__net" src="./images/where_net.png" alt="net">
+        </div>
+        <h1 class="block__title" data-aos="fade-right">Где?</h1>
+        <!-- WHERE CONTENT-->
+        <div class="where__content" id="partner">
+            <div class="where__content__text">
+                <p class="where__sub_title" data-aos="fade-right">
+                    <span class="bold">Рассвет</span> находится в сердце каждого, кто разделяет
+                    его идеи. В то же время, мы понимаем важность
+                    живого общения и мест, где можно встретить единомышленников и провести мероприятие.<br /><br />
+
+                    <span class="bold">На данном этапе</span> - мы находимся на этапе
+                    строительства наших отделений, они откроются
+                    на базе новых молодежных пространств
+                    в различных городах и регионах.<br /><br />
+
+                    <span class="bold">Сейчас</span> — мы проводим встречи и мероприятия
+                    на площадках партнеров, в коворкингах,
+                    на предприятиях, в университетах или онлайн.<br /><br />
+
+                    <span class="bold">Рассвет</span> открыт к предложениям о сотрудничестве —
+                    мы готовы арендовать любые подходящие для наших мероприятий пространства, это может быть лофт, офис,
+                    цех, ангар или даже бар, главное, чтобы место было
+                    ярким, доступным и интересным.
+                </p>
+                <p class="where__sub_title where__btn__text" data-aos="fade-right">
+                    Предложения от собственников или идеи участников
+                    мы с радостью примем в Telegram
+                </p>
+                <a href="https://t.me/rassvet_movement_bot" class="where__btn"
+                    data-aos="fade-right">@rassvet_movement_bot</a>
+            </div>
+            <div class="where__content__img">
+                <img src="./images/where_img.png" alt="where_img" data-aos="fade-down-left">
+            </div>
+        </div>
+        <!-- WHERE CONTENT BOTTOM -->
+        <div class="where__content__bottom">
+            <p class="where__bottom__sub_title">Рассвет вечен, пока сохранилась хотя бы одна из наших идей.
+                Рассвет непобедим, пока жив хотя бы один из его участников.</p>
+            <img class="where__bottom__arrow" src="./images/whereArrow.svg" alt="img">
+            <a  class=" where__bottom__btn" onclick="openBanner()">Стать участником</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+<footer class="footer" id="footer">
+    <!-- FOOTER BACKGROUND -->
+    <div class="footer__bg">
+        <img class="footer__bg__png" src="./images/footer_bg.png" alt="">
+        <img class="footer__bg__net" src="./images/footer_net.png" alt="" data-aos="fade-up">
+        <img class="footer__bg__circle" src="./images/footer_circle.png" alt="" data-aos="fade-down">
+    </div>
+    <!-- FOOTER CONTAINER -->
+    <div class="footer__content">
+        <!-- FOOTER TEXT -->
+        <div class="footer__text" data-aos="fade-right">
+            <img src="./images/footer_logo.svg" alt="" class="footer__text__logo">
+            <p class="footer__text__info">
+                АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ ПО<br />
+                ПОДДЕРЖКЕ МОЛОДЕЖНЫХ ИНИЦИАТИВ<br />
+                "ЦЕНТР МОЛОДЕЖНОГО ДВИЖЕНИЯ "РАССВЕТ"
+            </p>
+            <br />
+            <p class="footer__text__info">
+                ОГРН: 1227700820830<br />
+                ИНН: 7708412237<br />
+                КПП: 770801001
+            </p>
+            <div class="footer__social">
+                <img src="./images/phone.svg" alt="">
+                <a href="tel:+79154506016">+7 915 450 6016</a>
+            </div>
+            <div class="footer__social">
+                <img src="./images/email.svg" alt="">
+                <a href="mailto:contact@rassvet.info">contact@rassvet.info</a>
+            </div>
+            <div class="footer__social">
+                <img src="./images/telegram.svg" alt="">
+                <a href="https://t.me/rassvet_movement_bot">@rassvet_movement_bot</a>
+            </div>
+        </div>
+        <!-- FOOTER YEAR -->
+        <div class="footer__year">2023</div>
+        <!-- FOOTER MOBILE BUTTONS -->
+        <div class="footer__mobile">
+            <img src="./images/footerDown.svg" alt="">
+            <a class="footer__bottom__btn" onclick="openBanner()">Стать участником</a>
+        </div>
+    </div>
+</footer>
+
+    <!-- BANNERS AND OTHER HIDDEN THINGS -->
+    <!-- BANNERS AND OTHER HIDDEN THINGS -->
+    <!-- BANNERS AND OTHER HIDDEN THINGS -->
+
+    <!-- MENU MOBILE -->
+    <div class="menu__mobile" id="nav_mobile">
+        <br />
+        <br />
+        <a class="mobile__nav__item" onclick="scrollToMb('footer')">контакты</a><br /><br /><br />
+        <a class="mobile__nav__item" onclick="scrollToMb('program_mb')">программа</a><br /><br /><br />
+        <a class="mobile__nav__item" onclick="scrollToMb('partner_mb')">партнерам</a><br /><br /><br />
+        <a class="mobile__nav__item" onclick="scrollToMb('direct_mb')">направления</a><br /><br /><br />
+        <a class="mobile__nav__item" onclick="scrollToMb('support_content')">поддержка</a><br /><br /><br />
+    </div>
+
+    <!-- ARROW PC UP -->
+    <div class="arrow__up">
+        <a onclick="scrollToTop()   ">
+            <img src="./images/up.svg" alt="up">
+        </a>
+    </div>
+
+    <!-- BANNER 1 -->
+    <div class="banner" id="banner_pc">
+        <div class="banner__top">
+            <div class="banner__top__close">
+                <img src="./images/close.svg" alt="close" onclick="openBanner()">
+            </div>
+            <div class="banner__top__title">
+                <h1 class="banner__title">hello my name</h1>
+                <div class="banner__top__container">
+                    <h1 class="banner__title">is</h1>
+                    <img src="./images/banner_logo.svg" alt="logo">
+                </div>
+            </div>
+            <div class="banner__top__hiden"></div>
+        </div>
+        <form action="">
+            <div class="banner__form">
+                <div class="banner__form__items">
+                    <p>Имя</p>
+                    <input type="text" placeholder="Кирилл Кириллович">
+                    <p>Номер телефона</p>
+                    <input type="number" placeholder="+ 7 800 000 0000">
+                    <p>Направление проекта</p>
+                    <select name="" id="">
+                        <option value="">Наука</option>
+                        <option value="">Техника</option>
+                        <option value="">Творчество</option>
+                        <option value="">Спорт</option>
+                        <option value="">Другое</option>
+                    </select>
+                </div>
+                <div class="banner__form__items">
+                    <p>Возраст</p>
+                    <input type="number" placeholder="13">
+                    <p>Твой город</p>
+                    <input type="text" placeholder="Ростов-на-Дону">
+                    <p>Расскажи о себе</p>
+                    <textarea class="about" type="text"></textarea>
+                </div>
+                <div class="banner__form__items">
+                    <div class="banner__small">
+                        <img class="banner__small_decoration" src="./images/banner_paper.png" alt="">
+                        <img src="./images/banner_img.png" alt="">
+                        <p>Если ты разделяешь наши идеи
+                            и хочешь стать участником
+                            Рассвета, заполни эту анкету
+                            и мы с тобой свяжемся.
+
+                            Если что-то требует уточнения,
+                            то получить ответы можно
+                            через: </p>
+                        <a class="banner__link" href="http://t.me/rassvet_movement_bot">@rassvet_movement_bot</a>
+                        <a class="banner__small__btn" onclick="send()">отправить</a>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+        
+        <!-- BANNER MOBILE 1 -->
+        <div class="banner__small mb">
+            <img src="./images/banner_img.png" alt="">
+            <p>Если ты разделяешь наши идеи
+                и хочешь стать участником
+                Рассвета, заполни эту анкету
+                и мы с тобой свяжемся.
+
+                Если что-то требует уточнения,
+                то получить ответы можно
+                через: </p>
+            <a class="banner__link" href="http://t.me/rassvet_movement_bot">@rassvet_movement_bot</a>
+            <a class="banner__small__btn" onclick="openBannerMob()">хорошо</a>
+        </div>
+    </div>
+
+    <!-- BANNER MOBILE 2 -->
+    <div class="banner_mb" id="banner_mb">
+        <h1 class="banner_mb__title">Получить поддержку <br /> Рассвета</h1>
+        <p>Имя</p>
+        <input type="text" placeholder="Ростов-на-Дону">
+        <p>Возраст</p>
+        <input type="number" placeholder="13">
+        <div class="contact active" id="phone">
+            <p>Номер телефона</p>
+            <div class="contact__container">
+                <input type="number" placeholder="+ 7 800 000 0000">
+                <img src="./images/banner_phone.svg" alt="" onclick="changeContact()">
+            </div>
+        </div>
+        <div class="contact" id="teleg">
+            <p>Телефон / Telegram</p>
+            <div class="contact__container">
+                <input type="number" placeholder="+ 7 800 000 0000">
+                <img src="./images/banner_teleg.svg" alt="" onclick="changeContact()">
+            </div>
+        </div>
+        <p>Направление проекта</p>
+        <select name="" id="">
+            <option value="">Наука</option>
+            <option value="">Техника</option>
+            <option value="">Творчество</option>
+            <option value="">Спорт</option>
+            <option value="">Другое</option>
+        </select>
+        <p>Вкратце расскажи о своей идее:</p>
+        <input type="text" placeholder="Почему именно ты?">
+        <div class="banner_bt__add">
+            <img src="./images/banner_bg_add.svg" alt="add"
+                onclick="document.getElementById('fileID').click(); return false;">
+            <p>Прикрепить материалы? <br />
+                <span>(Необязательно)</span>
+            </p>
+            <input type="file" id="fileID" style="display: none;" />
+        </div>
+        <a class="banner_mb__btn" onclick="sendMob()">отправить</a>
+        <p class="btn" onclick="closeBannerMob()">отмена</з>
+    </div>
+
+    <!-- BANNER 2 -->
+    
+    <div class="banner_support" id="banner_sup_pc">
+        <div class="banner_support__top">
+            <div class="banner_support__top__close">
+                <img src="./images/close.svg" alt="close" onclick="openBannerSup()">
+            </div>
+            <div class="banner_support__top__title">
+                <h1 class="banner_support__title">Получить поддержку Рассвета</h1>
+            </div>
+            <div class="banner_support__top__hiden"></div>
+        </div>
+        <form action="">
+            <div class="banner_support__form">
+                <div class="banner_support__form__items">
+                    <p>Имя</p>
+                    <input type="text" placeholder="Кирилл Кириллович">
+                    <p>Возраст</p>
+                    <input type="number" placeholder="13">
+                    <div class="contact active" id="phone_sup">
+                        <p>Номер телефона</p>
+                        <div class="contact__container">
+                            <input type="number" placeholder="+ 7 800 000 0000">
+                            <img src="./images/banner_phone.svg" alt="" onclick="changeContact()">
+                        </div>
+                    </div>
+                    <div class="contact" id="teleg_sup">
+                        <p>Телефон / Telegram</p>
+                        <div class="contact__container">
+                            <input type="number" placeholder="+ 7 800 000 0000">
+                            <img src="./images/banner_teleg.svg" alt="" onclick="changeContact()">
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_support__form__items">
+                    <p>Направление проекта</p>
+                    <select name="" id="">
+                        <option value="">Наука</option>
+                        <option value="">Техника</option>
+                        <option value="">Творчество</option>
+                        <option value="">Спорт</option>
+                        <option value="">Другое</option>
+                    </select>
+                    <p>Вкратце расскажи о своей <br/> идее:</p>
+                    <input type="text"></input>
+                    <div class="banner_bt__add">
+                        <img src="./images/banner_bg_add.svg" alt="add"
+                            onclick="document.getElementById('fileID').click(); return false;">
+                        <p>Прикрепить материалы? <br />
+                            <span>(Необязательно)</span>
+                        </p>
+                        <input type="file" id="fileID" style="display: none;" />
+                    </div>
+                </div>
+            </div>
+            <div class="banner__support__bottom">
+                <p>
+                    Если у тебя есть идея и ты хочешь получить поддержку Рассвета, заполни эту заявку и мы с тобой свяжемся. 
+    
+                    Если что-то требует уточнения, то получить ответ можно через: 
+                </p>
+                <a href="">@rassvet_movement_bot</a>
+                <a class="btn_sup" onclick="sendSup()">Отправить</a>
+            </div>
+        </form>
+
+        <!-- BANNER 2 MOBILE -->
+
+        <div class="banner_mb support" id="banner_mb_sup">
+            <h1 class="banner_mb__title">Получить поддержку <br /> Рассвета</h1>
+            <p>Имя</p>
+            <input type="text" placeholder="Ростов-на-Дону">
+            <p>Возраст</p>
+            <input type="number" placeholder="13">
+            <div class="contact active" id="phone_sup_mob">
+                <p>Номер телефона</p>
+                <div class="contact__container">
+                    <input type="number" placeholder="+ 7 800 000 0000">
+                    <img src="./images/banner_phone.svg" alt="" onclick="changeContactSup()">
+                </div>
+            </div>
+            <div class="contact" id="teleg_sup_mob">
+                <p>Телефон / Telegram</p>
+                <div class="contact__container">
+                    <input type="number" placeholder="+ 7 800 000 0000">
+                    <img src="./images/banner_teleg.svg" alt="" onclick="changeContactSup()">
+                </div>
+            </div>
+            <p>Направление проекта</p>
+            <select name="" id="">
+                <option value="">Наука</option>
+                <option value="">Техника</option>
+                <option value="">Творчество</option>
+                <option value="">Спорт</option>
+                <option value="">Другое</option>
+            </select>
+            <p>Вкратце расскажи о своей идее:</p>
+            <input type="text" placeholder="Почему именно ты?">
+            <div class="banner_bt__add">
+                <img src="./images/banner_bg_add.svg" alt="add"
+                    onclick="document.getElementById('fileID').click(); return false;">
+                <p>Прикрепить материалы? <br />
+                    <span>(Необязательно)</span>
+                </p>
+                <input type="file" id="fileID" style="display: none;" />
+            </div>
+            <a class="banner_mb__btn" onclick="sendSup()">отправить</a>
+            <p class="btn" onclick="openBannerSup()">отмена</з>
+        </div>
+
+
+    </div>
+
+    <!-- FEEDBACK -->
+    <div class="feedback" id="feedback">
+        <p>Спасибо! Заявка на поддержку Рассвета отправлена.<br/>
+            Вскоре мы с тобой свяжемся. 
+        </p>
+    </div>
+
+    <!-- BANNERS AND OTHER HIDDEN THINGS END -->
+    <!-- BANNERS AND OTHER HIDDEN THINGS END -->
+    <!-- BANNERS AND OTHER HIDDEN THINGS END -->
+
+    <script src="./js/main.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./libs/slick.min.js"></script>
+    <script>
+        AOS.init();
+        $('.center').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        dots: true,
+        arrows: false,
+        prevArrow: "<button class='slick-prev'><img src='./images/arrowPrev.svg'/></button>",
+        nextArrow: "<button class='slick-next'><img src='./images/arrowNext.svg'/></button>",
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+        {
+            breakpoint: 1025,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
+        });
+    </script>
+</body>
+</html>
