@@ -45,7 +45,7 @@
         <div class="header__content__info">
             <img class="logo__title" src="./images/header_title.svg" alt="logo__title" data-aos="fade-down">
             <h1 class="header__title">Будущее в твоих руках!</h1>
-            <a href="#" class="header__btn" onclick="openBanner()">стать участником</a>
+            <a class="header__btn" onclick="openBanner()">стать участником</a>
         </div>
     </div>
 </header>
@@ -867,6 +867,7 @@
 
     <!-- MENU MOBILE -->
     <div class="menu__mobile" id="nav_mobile">
+        <img class="close_menu" onclick="closeMenu()" src="./images/menu_close.svg" alt="close">
         <br />
         <br />
         <a class="mobile__nav__item" onclick="scrollToMb('footer')">контакты</a><br /><br /><br />
@@ -995,6 +996,9 @@
             <p>Прикрепить материалы? <br />
                 <span>(Необязательно)</span>
             </p>
+            <img src="./images/file1.png" alt="">
+            <img src="./images/file2.png" alt="">
+            <img src="./images/file3.png" alt="">
             <input type="file" id="fileID" style="display: none;" />
         </div>
         <a class="banner_mb__btn" onclick="sendMob()">отправить</a>
@@ -1105,6 +1109,9 @@
                 <p>Прикрепить материалы? <br />
                     <span>(Необязательно)</span>
                 </p>
+                <img src="./images/file1.png" alt="">
+                <img src="./images/file2.png" alt="">
+                <img src="./images/file3.png" alt="">
                 <input type="file" id="fileID" style="display: none;" />
             </div>
             <a class="banner_mb__btn" onclick="sendSup()">отправить</a>
